@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(101, 116, 136);
+   font-family: "Noto Sans", sans-serif;
+   color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.image img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.card{
+    /* background-color: rgb(181, 74, 74); */
+    width: 100%;
+    height: 392px;
+    overflow: hidden;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+
+}
+
+.card1{
+    background-color: white;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo{
+    object-fit: cover;
+    max-width: 250px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: rgb(4, 57, 126);
+    margin-bottom: 20px;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: rgb(16, 30, 49);
+}
+
+p{
+   color: black;
+   margin-bottom: 20px;
+}
+
+.card2{
+    background-color: white;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card3{
+    background-color: white;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .card{
+        width: 100%;
+        height: auto;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+    }
+
+    h2 a{
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1100px) {
+    .card{
+        width: auto;
+        height: auto;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+}
+
